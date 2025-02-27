@@ -1,5 +1,11 @@
 # OPA-DPO (On-Policy Alignment Direct Preference Optimization)
 
+## GOOD NEWS!!!
+Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
+
+Find our full paper through arXiv Link: https://arxiv.org/abs/2501.09695.
+We will update the experimental content and codebase in the next few weeks (including the experimental results on the basis of [LLaVA-Onevision](https://llava-vl.github.io/blog/2024-08-05-llava-onevision/)).
+
 ## Introduction
 
 Hallucination remains a major challenge for Large Vision-Language Models (LVLMs). Direct Preference Optimization (DPO) has gained increasing attention as a simple solution to hallucination issues. Nonetheless, different data construction methods in existing works bring notable performance variations.
@@ -102,6 +108,18 @@ bash run/train_opa_dpo.sh
 
 Your final OPA-DPO model will be saved at `./output/llava7b_opadpo_model/checkpoint-final` (or `output/llava13b_opadpo_model/checkpoint-final`). It is a LoRA adapter and should be combined with its base model for final usage.
 
+
 ## Acknowledgements
 
 We would like to express our gratitude for the code snippets provided in [LLaVA](https://github.com/haotian-liu/LLaVA), [LLaVA-RLHF](https://github.com/llava-rlhf/LLaVA-RLHF), [FastChat](https://github.com/lm-sys/FastChat) and [TRL](https://github.com/huggingface/trl), and datasets provided in [RLAIF-V](https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset). These resources have significantly contributed to the development of our project.
+
+## Bibtex
+If you find OPA-DPO helpful for your work, please cite
+```
+@article{yang2025opadpo,
+  title={Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key},
+  author={Yang, Zhihe and Luo, Xufang and Han, Dongqi and Xu, Yunjian and Li, Dongsheng},
+  journal={arXiv preprint arXiv:2501.09695},
+  year={2025}
+}
+```
