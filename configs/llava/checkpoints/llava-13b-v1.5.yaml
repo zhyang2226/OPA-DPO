@@ -1,0 +1,5 @@
+defaults:
+  - innereyedata
+  - _self_
+
+base_model: base_models/llava-v1.5-13b

@@ -1,0 +1,32 @@
+defaults:
+  - llava_training_base
+  - override checkpoints: llava-7b-v1.5
+  - override image_checkpoints: clip-336
+  - _self_
+
+model:
+  mm_vision_select_layer: -2
+  mm_projector_type: "mlp2x_gelu"
+  tune_mm_mlp_adapter: True
+  tune_base_model: True
+  tune_vision_tower: False
+  policy_model_name_or_path: "none"
+
+training:
+  full_tune: True
+  lora_tune: False
+  lora_r: 128
+  lora_alpha: 256
+  lora_dropout: 0.0
+  entropy_loss: False
+  entropy_mask_ratio: 0.2
+  entropy_mask_method: "random"
+  entropy_loss_coef: 1.0
+  entropy_decay_coef: 1.0
+
+data:
+  image_folder: None
+  data_dir: None
+
+wandb_project: 'LLaVA-MAIRA_SFT'
+

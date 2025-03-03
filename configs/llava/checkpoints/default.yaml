@@ -1,0 +1,13 @@
+# Download methods can be "run", "blob" or "local". For details, see class `DownloadMethods` in `azure_utils.distributed.distributed_download`
+base_model: null
+download_method_for_base_model: "blob"
+delta_model: null
+download_method_for_delta_model: "run"
+checkpoint_run_id: null
+checkpoint_workspace_name: null
+checkpoint_azureml_datastore: null
+# If this is set to true, only the model definition will be loaded from the checkpoint, but not the weights. Use this to speed up debugging.
+skip_loading_weights: False
+# If this is set to True, the first model checkpoint writing in the trainer is skipped.
+# This first checkpoint only contains the initial model weights
+skip_first_checkpoint_write: True

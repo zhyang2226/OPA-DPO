@@ -1,0 +1,6 @@
+defaults:
+  - default
+
+_target_: llava.model.multimodal_encoder.clip_encoder.CLIPVisionTower
+image_model: openai/clip-vit-large-patch14
+download_method_for_image_model: "local"

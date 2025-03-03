@@ -1,0 +1,145 @@
+defaults:
+  - llava_training_base
+  - override checkpoints: vicuna-7b-v1.5
+  - override image_checkpoints: clip-336
+  - _self_
+
+model:
+  mm_projector_type: "mlp2x_gelu"
+  policy_model_name_or_path: Optional[str] = field(default="EleutherAI/pythia-1.4b")
+  trust_remote_code: True
+  base_model_name: Optional[str] = field(default="EleutherAI/pythia-12b")
+  version: "v1"
+  freeze_backbone: False
+  tune_mm_mlp_adapter: True
+  vision_tower: null
+  mm_vision_select_layer: -1
+  pretrain_mm_mlp_adapter: null
+  mm_use_im_start_end: False
+  mm_use_im_patch_token: False
+  mm_vision_select_feature: "patch"
+
+training:
+  detailed_report: True
+  response_score: True
+  response_image_relation: True
+  standard_pair_coef: 1.0
+  AI_pair_coef: 1.0
+
+  CoPO: True
+  CoPO_mask_ratio: 0.3
+  CoPO_method: 'random'
+  CoPO_coef: 0.2
+  AncPO: True
+  Anchor_value: 0.0
+  mDPO_anchor: True
+  Anchor_coef: 1.0
+  reference_free: False
+  f_divergence_type: "reverse_kl"
+  loss_type: "sigmoid"
+  beta: 0.1
+  label_smoothing: 0.0
+  prefer_data: "gpt4o_pseudo"
+
+  norm_maintain_32: True
+  lora_with_projector: False
+  value_head_mode: "linear"
+  ddp_backend: null
+  ddp_find_unused_parameters: null
+
+  deepspeed: null
+  bits: 16
+  cache_dir: null
+  # From AlpacaFarm
+  truncate_tokens: null
+  truncate_after: null
+  penalty_reward_value: -1.0
+  penalize_no_stop_token: False
+  length_bonus_score: 0.0
+  correct_bonus_score: 0.0
+  reward_bias: 0.0
+  diverse_penalty_reward_scale: 0.0
+  penalize_non_diverse_responses: False
+  relative_stop_token_penalty: False
+  clean_tokens_after_eos: False
+  suppress_eos_at_generation: False
+  total_epochs: 4
+  rollout_batch_size: 512
+  step_batch_size: 256
+  rollout_per_device_batch_size: 32
+  step_per_device_batch_size: 2
+  reward_model_per_device_batch_size: null
+  noptepochs: 2
+  vf_coef: 0.1
+  cliprange: 0.2
+  cliprange_value: 0.2
+  gamma: 1.0
+  lam: 1.0
+  whiten_rewards: True
+  temperature: 1.0
+  kl_coef: 0.2
+  kl_approximator: "k1"
+  target_kl: 6.0
+  k_beta: 0.1
+  adaptive_kl: False
+  eval_batches: 256
+  init_value_with_reward: True
+  save_steps_extra: null
+  query_len: 128
+  min_token_limit: null
+  response_len: 384
+  model_max_length: 1024
+  whitening_async_stats: "per_gpu"
+  # From QLoRA
+  full_finetune: False
+  adam8bit: False
+  report_to: "wandb"
+  resume_dir: null
+  output_dir: "./output"
+  optim: "paged_adamw_32bit"
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 16
+  weight_decay: 0.0
+  learning_rate: 0.0002
+  remove_unused_columns: False
+  max_grad_norm: 0.3
+  gradient_checkpointing: True
+  do_train: True
+  lr_scheduler_type: "constant"
+  logging_steps: 10
+  group_by_length: True
+  save_strategy: "steps"
+  save_steps: 250
+  save_total_limit: 40
+  resume_from_training: False
+  reward_prompt_file: null
+  image_to_caption_file: null
+  warmup_steps: null
+  freeze_mm_mlp_adapter: False
+  reward_scale: 1.0
+  max_step: 300
+  reward_clip_min: -10.0
+  reward_clip_max: 10.0
+  train_from_sft: True
+  advantage_whiten_all: True
+
+  lora_r: 128
+  lora_alpha: 256
+  lora_dropout: 0.0
+
+
+data:
+  # data_path: str = field(default="tatsu-lab/alpaca_farm")
+  # dataset_name: str = field(default="alpaca_instructions")
+  # dataset: "/home/v-zhiheyang/rad_code/v-zhiheyang/mimic-cxr"
+  train_splits: null
+  stop_token: null
+  # From LLaVA
+  lazy_preprocess: False
+  is_multimodal: False
+  image_folder: null
+  image_aspect_ratio: "square"
+  image_grid_pinpoints: null
+
+base_model: /workspace/storage/base_model/MAIRA/checkpoint-final
+

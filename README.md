@@ -1,6 +1,7 @@
 # OPA-DPO (On-Policy Alignment Direct Preference Optimization)
 
 ## GOOD NEWS!!!
+
 Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
 
 Find our full paper through arXiv Link: https://arxiv.org/abs/2501.09695.
@@ -76,7 +77,7 @@ As shown in Fig.d, the first step is to collect responses from the original poli
 bash run/online_generate.sh
 ```
 
-Before proceeding, it is essential to **configure your personal API endpoint and key** within the `run/online\_generate.sh` script. Please refer to lines 66 to 69 to complete this setup.
+Before proceeding, it is essential to **configure your personal API endpoint and key** within the `run/online_generate.sh` script. Please refer to lines 66 to 69 to complete this setup.
 
 By default, each run can only be performed on **a single subset consisting of 2500 samples**. If you want to use more training data or employ a different base model, you'll need to modify the sections of the code that are currently commented out.
 
@@ -108,13 +109,14 @@ bash run/train_opa_dpo.sh
 
 Your final OPA-DPO model will be saved at `./output/llava7b_opadpo_model/checkpoint-final` (or `output/llava13b_opadpo_model/checkpoint-final`). It is a LoRA adapter and should be combined with its base model for final usage.
 
-
 ## Acknowledgements
 
 We would like to express our gratitude for the code snippets provided in [LLaVA](https://github.com/haotian-liu/LLaVA), [LLaVA-RLHF](https://github.com/llava-rlhf/LLaVA-RLHF), [FastChat](https://github.com/lm-sys/FastChat) and [TRL](https://github.com/huggingface/trl), and datasets provided in [RLAIF-V](https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset). These resources have significantly contributed to the development of our project.
 
 ## Bibtex
+
 If you find OPA-DPO helpful for your work, please cite
+
 ```
 @article{yang2025opadpo,
   title={Mitigating Hallucinations in Large Vision-Language Models via DPO: On-Policy Data Hold the Key},

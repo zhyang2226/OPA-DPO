@@ -1,0 +1,6 @@
+_target_: null
+image_model: null
+download_method_for_image_model: "local"
+image_checkpoint_run_id: null
+image_checkpoint_workspace_name: null
+image_checkpoint_azureml_datastore: null
