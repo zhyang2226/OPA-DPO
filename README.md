@@ -1,9 +1,8 @@
 # OPA-DPO (On-Policy Alignment Direct Preference Optimization)
 
-### Project Page: [https://opa-dpo.github.io/](https://opa-dpo.github.io/)
+#### Project Page: [https://opa-dpo.github.io/](https://opa-dpo.github.io/)
 
-### Authors: [Zhihe Yang](https://zhyang2226.github.io)$^{1,3}$, [Xufang Luo](https://www.microsoft.com/en-us/research/people/xufluo/)$^{2*}$, [Dongqi Han](https://www.microsoft.com/en-us/research/people/dongqihan/)$^2$, [Yunjian Xu](https://www4.mae.cuhk.edu.hk/peoples/xu-yunjian/)$^{1,3*}$, [Dongsheng Li](http://recmind.cn/)$^2$
-
+#### Authors: [Zhihe Yang](https://zhyang2226.github.io)$^{1,3}$, [Xufang Luo](https://www.microsoft.com/en-us/research/people/xufluo/)$^{2*}$, [Dongqi Han](https://www.microsoft.com/en-us/research/people/dongqihan/)$^2$, [Yunjian Xu](https://www4.mae.cuhk.edu.hk/peoples/xu-yunjian/)$^{1,3*}$, [Dongsheng Li](http://recmind.cn/)$^2$
 ($^*$ for corresponding authors)
 1. The Chinese University of Hong Kong, Hong Kong SAR, China
 2. Microsoft Research Asia, Shanghai, China
