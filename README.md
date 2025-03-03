@@ -6,7 +6,7 @@
 ($^*$ for corresponding authors)
 1. The Chinese University of Hong Kong, Hong Kong SAR, China
 2. Microsoft Research Asia, Shanghai, China
-3. The Chinese University of Hong Kong, Shenzhen Research Institute (SZRI), Guandong, China
+3. The Chinese University of Hong Kong, Shenzhen Research Institute (SZRI), Guangdong, China
 
 ## GOOD NEWS!!!
 
