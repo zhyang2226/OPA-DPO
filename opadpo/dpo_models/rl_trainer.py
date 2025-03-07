@@ -169,7 +169,7 @@ class RLTrainer(object):
                         stats_for_this_step[
                             "loss/grad_norm"
                         ] = self._compute_grad_norm()
-                        print(f"grad_norm: {stats_for_this_step['loss/grad_norm']}")
+                        # print(f"grad_norm: {stats_for_this_step['loss/grad_norm']}")
                         stats_list.append(stats_for_this_step)
                     self.optimizer.step()
                     self.optimizer.zero_grad(set_to_none=True)

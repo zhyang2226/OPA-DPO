@@ -18,5 +18,7 @@ llava/
 !configs/llava/
 llava_setup/LLaVA/
 
+local_test.py
+upload_googledrive.py
 history.sqlite
 run/online_generate_withkey.sh

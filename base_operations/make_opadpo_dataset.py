@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import shutil
 
 def sort_key(file_name):
     numbers = re.findall(r'\d+', file_name)
@@ -92,10 +93,21 @@ print("Filter2: filtered out repeating last sentence")
 print(f"Filtered size: {filtered_size}, Filtered size2: {filtered_size2}")
 
 filtered_data = [item for item in filtered_data if isinstance(item.get('AI_pseudo_response', ''), str) and len(item.get('AI_pseudo_response', '')) > 0]
+print("Filter3: filtered out empty AI_pseudo_response")
+print(f"Filtered size2: {filtered_size2}, Filtered size3: {len(filtered_data)}")
 
 from datasets import Dataset
 
 # NOTE: Saving OPA-Dataset
+if os.path.exists(OPA_datapath):
+    print(f"Removing existing file: {OPA_datapath}")
+    shutil.rmtree(OPA_datapath)
+
+opa_parent_dir = os.path.dirname(OPA_datapath)
+if not os.path.exists(opa_parent_dir):
+    print(f"Creating directory: {opa_parent_dir}")
+    os.makedirs(opa_parent_dir)
+
 dataset = Dataset.from_dict({
     "queries": [item['query'] for item in filtered_data],
     "image_bytes": [item['image_bytes'] for item in filtered_data],
