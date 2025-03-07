@@ -1,24 +1,10 @@
 # OPA-DPO (On-Policy Alignment Direct Preference Optimization)
 
-<div style="display: flex; gap: 10px;">
-
-<a href="https://arxiv.org/abs/2501.09695" style="text-decoration: none;">
-  <div style="background-color: crimson; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">arXiv PDF</div>
-</a>
-<a href="https://drive.google.com/drive/folders/1Xmrb43zIbk3IzLLRQx65iBf7J4SHXa9j" style="text-decoration: none;">
-  <div style="background-color: dodgerblue; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">Dataset GoogleDrive</div>
-</a>
-
-<a href="https://opa-dpo.github.io/" style="text-decoration: none;">
-  <div style="background-color: green; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">Project Page</div>
-</a>
-
-<a href="https://www.zhihu.com/question/13954924392/answer/116196467419" style="text-decoration: none;">
-<div style="background-color: #0084FF; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold;">知乎（中文）</div>
-</a>
-
-</div>
-
+[![arXiv](https://img.shields.io/badge/arXiv-PDF-red)](https://arxiv.org/abs/2501.09695)
+[![Project Page](https://img.shields.io/badge/Project-Page-brightgreen)](https://opa-dpo.github.io/)
+[![Google Drive](https://img.shields.io/badge/Dataset-GoogleDrive-yellow)](https://drive.google.com/drive/folders/1Xmrb43zIbk3IzLLRQx65iBf7J4SHXa9j)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-orange)](https://huggingface.co/zhyang2226)
+[![知乎](https://img.shields.io/badge/知乎-中文-0084FF)](https://www.zhihu.com/question/13954924392/answer/116196467419)
 
 #### Authors: [Zhihe Yang](https://zhyang2226.github.io)$^{1,3}$, [Xufang Luo](https://www.microsoft.com/en-us/research/people/xufluo/)$^{2*}$, [Dongqi Han](https://www.microsoft.com/en-us/research/people/dongqihan/)$^2$, [Yunjian Xu](https://www4.mae.cuhk.edu.hk/peoples/xu-yunjian/)$^{1,3*}$, [Dongsheng Li](http://recmind.cn/)$^2$
 
@@ -32,8 +18,6 @@
 
 Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
 
-Find our full paper through arXiv Link: https://arxiv.org/abs/2501.09695.
-We will update the experimental content and codebase in the next few weeks (including the experimental results on the basis of [LLaVA-Onevision](https://llava-vl.github.io/blog/2024-08-05-llava-onevision/)).
 
 ## Introduction
 
