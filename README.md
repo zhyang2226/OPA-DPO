@@ -1,4 +1,4 @@
-# OPA-DPO (On-Policy Alignment Direct Preference Optimization)
+# OPA-DPO (On-Policy Alignment Direct Preference Optimization) [CVPR2025 Oral]
 
 [![arXiv](https://img.shields.io/badge/arXiv-PDF-red)](https://arxiv.org/abs/2501.09695)
 [![Project Page](https://img.shields.io/badge/Project-Page-brightgreen)](https://opa-dpo.github.io/)
@@ -16,7 +16,9 @@
 
 ## GOOD NEWS!!!
 
-Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
+(2025.2) Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
+
+(2025.4) Our paper has been selected for an Oral Presentation!
 
 
 ## Introduction
