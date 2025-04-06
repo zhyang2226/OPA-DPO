@@ -16,9 +16,9 @@
 
 ## GOOD NEWS!!!
 
-(2025.2) Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
+(2025.2) 🎉 Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
 
-(2025.4) Our paper has been selected for <span style="color:red;">**Oral Presentation**</span> (<span style="color:blue;">**0.74%**</span> 96/13008)!
+(2025.4) 🎉 Our paper has been selected for **Oral Presentation** (**0.74%** 96/13008)!
 
 
 ## Introduction
