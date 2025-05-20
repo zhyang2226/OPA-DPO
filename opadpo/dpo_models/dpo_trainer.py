@@ -661,7 +661,7 @@ class DPOTrainer(RLTrainer):
             else:
                 raise NotImplementedError
 
-            # * Preference Pair3 Standard >> Original Generate
+            # * Preference Pair3 Standard Origin >> Standard Mask
             losses3, chosen_rewards3, rejected_rewards3 = self.dpo_loss(
                 policy_chosen_logps=outputs["standard_response_logprobs"],
                 policy_rejected_logps=outputs_new["mask_standard_response_logprobs"],
@@ -669,6 +669,7 @@ class DPOTrainer(RLTrainer):
                 reference_rejected_logps=ref_mask_standard_response_logprobs,
             )
 
+            # * Preference Pair4 AI_Gen Origin >> AI_Gen Mask
             losses4, chosen_rewards4, rejected_rewards4 = self.dpo_loss(
                 policy_chosen_logps=outputs["AI_pseudo_response_logprobs"],
                 policy_rejected_logps=outputs_new["mask_AI_pseudo_response_logprobs"],

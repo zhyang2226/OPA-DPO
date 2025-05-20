@@ -126,14 +126,14 @@ bash run/train_opa_dpo.sh
 
 Your final OPA-DPO model will be saved at `./output/llava7b_opadpo_model/checkpoint-final` (or `output/llava13b_opadpo_model/checkpoint-final`). It is a LoRA adapter and should be combined with its base model for final usage.
 
-## TODO List
 
-We are almost there. Stay tunned!
+## Evaluation
+Before evaluating the trained model, ensure that the **COCO2014/COCO2017 images and annotations** [[here](https://cocodataset.org/#download)], as well as the **AMBER dataset** [[here](https://github.com/junyangwang0410/AMBER?tab=readme-ov-file)], are downloaded to the designated folders. Subsequently, update the corresponding paths in lines 30–33 of `run/eval_all_metrics.sh`.
+Additionally, specify **your personal API endpoint and key** in lines 4–5 of the same script.
 
-* [x] Release training code for LLaVA-1.5-7B/13B.
-* [x] Release dataset for LLaVA-1.5-7B/13B.
-* [ ] Prepare full evaluation code on hallucination benchmarks.
-* [ ] Release code/data for LLaVA-Onevision.
+```
+bash run/eval_all_metrics.sh
+```
 
 ## Acknowledgements
 

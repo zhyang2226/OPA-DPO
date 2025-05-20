@@ -17,6 +17,7 @@ output/
 llava/
 !configs/llava/
 llava_setup/LLaVA/
+!eval_llava_rlhf_coco/llava/
 
 local_test.py
 upload_googledrive.py

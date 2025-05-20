@@ -56,21 +56,6 @@ class AlpacaAccelerator(accelerate.Accelerator):
     def unwrap_optimizer(self, optimizer: accelerate.accelerator.AcceleratedOptimizer):
         return optimizer.optimizer
 
-# special_chars = "!@#$%^&*()_+-=[]{};:,.<>?/|~`0123456789"
-# all_chars = '0123456789abcdefghijklmnopqrstuvwxyz'
-# char_to_special = {all_chars[i]: special_chars[i] for i in range(len(all_chars))}
-# special_to_char = {v: k for k, v in char_to_special.items()}
-
-# def encrypt(raw):
-#     encrypted = ''.join(char_to_special[c] for c in raw)
-#     return encrypted
-
-# def decrypt(encrypted):
-#     if any(c in encrypted for c in 'abcdefghijklmnopqrstuvwxyz'):
-#         return encrypted
-#     else:
-#         decrypted = ''.join(special_to_char[c] for c in encrypted)
-#         return decrypted
 
 class Generator(object):
     def __init__(
@@ -102,7 +87,6 @@ class Generator(object):
         global_rank = int(os.environ.get("RANK", 0))
         api_total_num = int(os.getenv("API_NUM", 1))
         api_index = global_rank % api_total_num
-        # API_key = decrypt(os.getenv(f"API_KEY{api_index + 1}"))
         API_key = os.getenv(f"API_KEY{api_index + 1}")
         AZURE_point = os.getenv(f"AZURE_POINT{api_index + 1}")
         self.api_model = os.getenv(f"API_MODEL{api_index + 1}")
