@@ -4,7 +4,6 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-brightgreen)](https://opa-dpo.github.io/)
 [![Google Drive](https://img.shields.io/badge/Dataset-GoogleDrive-yellow)](https://drive.google.com/drive/folders/1Xmrb43zIbk3IzLLRQx65iBf7J4SHXa9j)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-orange)](https://huggingface.co/zhyang2226)
-
 [![MSRA](https://img.shields.io/badge/MSRA-官网报道-red)](https://www.microsoft.com/en-us/research/articles/opa-dpo/)
 [![MSRA](https://img.shields.io/badge/MSRA-微信公众号-green)](https://mp.weixin.qq.com/s/CbcQCeKX6WSZfcVn6fOmHA)
 [![知乎](https://img.shields.io/badge/知乎-中文解析-0084FF)](https://www.zhihu.com/question/13954924392/answer/116196467419)
