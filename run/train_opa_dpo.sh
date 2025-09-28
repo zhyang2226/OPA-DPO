@@ -128,7 +128,7 @@ torchrun \
     --response_len 896 \
     --noptepochs $NOPTEPOCHS \
     --eval_steps 5000 \
-    --save_steps 10 \
+    --save_steps 75 \
     --save_total_limit 5 \
     --image_aspect_ratio 'pad' \
     --train_splits 'train' \
