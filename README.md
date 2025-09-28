@@ -16,7 +16,9 @@
 2. Microsoft Research Asia, Shanghai, China
 3. The Chinese University of Hong Kong, Shenzhen Research Institute (SZRI), Guangdong, China
 
-## GOOD NEWS!!!
+## NEWS!!!
+
+(2025.6) Our Oral record has been uploaded to [Youtube](https://www.youtube.com/watch?v=X3vk9LziL6Q) and [Bilibili](https://www.bilibili.com/video/BV1aENbzhEQV). The Powerpoint is available [here]().
 
 (2025.2) 🎉 Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
 
