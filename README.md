@@ -18,7 +18,7 @@
 
 ## NEWS!!!
 
-(2025.6) 🎉 Our Oral record has been uploaded to [Youtube](https://www.youtube.com/watch?v=X3vk9LziL6Q) and [Bilibili](https://www.bilibili.com/video/BV1aENbzhEQV). The Powerpoint is available [here](https://github.com/zhyang2226/OPA-DPO/blob/main/assests/README/CVPR_Oral_v6_final.pptx). We also upload the source file of the diagrams we draw [here](https://github.com/zhyang2226/OPA-DPO/blob/main/assests/README/draw_fig.pptx).
+(2025.6) 🎉 The recording of our oral presentation is available on [Youtube](https://www.youtube.com/watch?v=X3vk9LziL6Q) and [Bilibili](https://www.bilibili.com/video/BV1aENbzhEQV). The PowerPoint slides can be accessed [here](https://github.com/zhyang2226/OPA-DPO/blob/main/assests/README/CVPR_Oral_v6_final.pptx). The source files for all figures/diagrams are provided [here](https://github.com/zhyang2226/OPA-DPO/blob/main/assests/README/draw_fig.pptx).
 
 (2025.2) 🎉 Our paper has been accepted by **CVPR 2025**! See you in Nashville this summer!
 
